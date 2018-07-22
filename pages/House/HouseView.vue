@@ -62,7 +62,6 @@
   class="hidden-xs-only"
    style="background-color: rgba(48,48,48 ,.95);"
     flat
-    height=500
     dark
   >
     <v-card-title primary-title>
