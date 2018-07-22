@@ -1,19 +1,19 @@
-# Vuetify Webpack SSR Template
+# ReMax Webpack SSR Template
 
-> Vuetify SSR Webpack Template
+> ReMax SSR Webpack Template
 
 ## Build Setup
 
 ``` bash
 vue init vuetifyjs/webpack-ssr
 
-cd webpack-ssr
+cd RealEstate-ReMax
 
 # npm
 npm install
 
-# yarn
-yarn
+npm run dev
+
 ```
 
-For additional information, please visit the [Official Documentation](https://vuetifyjs.com).
+For additional information, please visit the [Official Documentation](https://Remax.com).
