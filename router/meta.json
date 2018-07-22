@@ -1,0 +1,12 @@
+{
+  "/": {
+    "title": "Where we belong!",
+    "description": "My Vuetify.js Project",
+    "keywords": "vue 2.0, vuetify"
+  },
+  "/inspire": {
+    "title": "Create something amazing",
+    "description": "",
+    "keywords": ""
+  }
+}
