@@ -1,13 +1,14 @@
 <template>
 <v-container fluid>
 <v-layout  row wrap>
-<v-flex xs8 px-1>
+<v-flex xs8 pr-1>
     
 
-<v-flex xs12 py-1 v-for="house in houses" :key="house.id" > 
+<v-flex xs12 pb-1 v-for="house in houses" :key="house.id" > 
 
     <v-card
     flat
+    tile
     class="transparent">
         
             <v-jumbotron 
@@ -62,7 +63,9 @@
   class="hidden-xs-only"
    style="background-color: rgba(48,48,48 ,.95);"
     flat
-    dark
+    dark 
+    tile
+    fixed
   >
     <v-card-title primary-title>
       <div>
@@ -70,6 +73,7 @@
       </div>
     </v-card-title>
     <v-card-actions>
+    <v-layout row wrap>
       <v-layout row wrap>
         <v-flex xs12 >
           <v-text-field
@@ -92,10 +96,18 @@
             placeholder="Any"
             outline
           ></v-text-field>
-      <v-btn flat block color="primary">MORE <v-icon small color="white">keyboard_arrow_down</v-icon></v-btn>
-      <v-btn flat block color="primary">Search</v-btn>
-      </v-flex>
+        </v-flex>
       </v-layout>
+      <v-layout row wrap>
+        <v-flex xs12>
+            <v-btn flat block color="primary">MORE <v-icon small color="white">keyboard_arrow_down</v-icon></v-btn>          
+        </v-flex>
+        <v-flex xs12>
+            <v-btn flat block color="primary">SEARCH <v-icon small color="white">search</v-icon></v-btn>
+            
+        </v-flex>
+      </v-layout>
+    </v-layout>
     </v-card-actions>
   </v-card>
 

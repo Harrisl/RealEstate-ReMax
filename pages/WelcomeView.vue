@@ -71,21 +71,24 @@
             placeholder="Any"
             outline
           ></v-text-field>
-                <v-autocomplete
-        :items="items"
-        readonly
-
+          <v-autocomplete
+            :items="items"
+            readonly
             label="Property Type"
             placeholder="Any"
-        outline
-      ></v-autocomplete>
+            outline
+          ></v-autocomplete>
           <v-text-field
             label="Location"
             placeholder="Any"
             outline
           ></v-text-field>
-      <v-btn flat block color="primary">MORE <v-icon small color="white">keyboard_arrow_down</v-icon></v-btn>
-      <v-btn flat block color="primary">Search</v-btn>
+          <v-flex xs12>         
+            <v-btn flat block color="primary">MORE <v-icon small color="white">keyboard_arrow_down</v-icon></v-btn>
+          </v-flex>
+          <v-flex xs12>
+            <v-btn flat block color="primary">Search</v-btn>
+          </v-flex>
       </v-flex>
       </v-layout>
     </v-card-actions>
@@ -151,8 +154,8 @@ class="hover"
       v-for="house in houses"
       :key="house.url"
       :src="house.url"
-      @click.native='onLoadHouse(house.id)'
-    ></v-carousel-item>
+      
+    ><v-btn flat color="primary" @click.native='onLoadHouse(house.id)'>{{house.id}}</v-btn></v-carousel-item>
   </v-carousel>
   </v-flex>
   

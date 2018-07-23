@@ -16,6 +16,7 @@
           :key="i"
           v-for="(item, i) in menu"
           exact
+          ripple
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
@@ -64,9 +65,10 @@
       
       <v-toolbar-items 
         v-if="$route.path != '/house'"
-        class="hidden-sm-and-down"
+        class="hidden-xs-only"
         v-for="(item, i) in tbmenu" 
         :key="i"
+        ripple
       >
             <v-slide-y-transition mode="out-in">
       
@@ -183,8 +185,8 @@
         </v-toolbar-items>
       </v-toolbar>
       </v-flex>
-      <v-layout align-end justify-end column/>
-      <v-flex xs2>     
+      <v-layout align-end justify-end column class="hidden-xs-only">
+      <v-flex xs1>     
           <v-text-field
               prepend-icon="phone"
               value="876-953-9000"
